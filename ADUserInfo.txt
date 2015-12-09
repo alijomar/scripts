@@ -1,0 +1,6 @@
+# PS to view AD Useraccount
+# Created by A.Omar
+# Modified Date
+# Version 1.0
+
+PS C:\Users\ali> Get-ADUser -Identity (read-host "username") -Properties * | FT -Property GivenName, Surname, SamAccountName, UserPrincipalName, whenCreated, Enabled
