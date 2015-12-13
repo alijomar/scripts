@@ -3,5 +3,5 @@
 # Modified by
 # version 1.0
 
-Unlock-ADAccount -Identity (Read-Host "Username") | FT Name,UserPrincipalName,employeeType,Description,telephoneNumber,LastLogonDate -AutoSize
+Unlock-ADAccount -Identity (Read-Host "Enter username to unlock?") | FT Name,UserPrincipalName,employeeType,Description,telephoneNumber,LastLogonDate -AutoSize
 
